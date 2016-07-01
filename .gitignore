@@ -3,3 +3,7 @@
 ################################################################################
 
 /OWINAzure/bin
+/.vs
+/OWINAzure/obj/Debug
+/OWINAzure/Properties/PublishProfiles
+/OWINAzure/Metadata/deploymentTemplates

@@ -1,5 +1,6 @@
 ﻿using System.Web.Http;
 using System.Web.Http.Cors;
+using OWINAzure.Authorization;
 
 namespace OWINAzure
 {
@@ -10,7 +11,7 @@ namespace OWINAzure
             // Web API configuration and services
             var corsAttr = new EnableCorsAttribute("*", "*", "*");
             config.EnableCors(corsAttr);
-
+            config.MessageHandlers.Add(new AuthorizationHeaderHandler());
             // Web API routes
             config.MapHttpAttributeRoutes();
 
